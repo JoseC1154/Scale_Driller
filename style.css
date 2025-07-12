@@ -1,0 +1,130 @@
+/* Base Reset & Background */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+:root {
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --dark-text: #222;
+  --primary: #0077cc;
+  --accent: #e0e0e0;
+  --radius: 1rem;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --vh: 100vh;
+}
+
+/* Centered Container */
+.centered-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(var(--vh));
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 480px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark-text);
+}
+
+.input-type-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.icon.active {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.selectors label,
+.selectors select {
+  display: inline-block;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.hidden {
+  display: none;
+}
+
+#quiz-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#quiz-header button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  font-size: 1.2rem;
+  background: var(--accent);
+  color: var(--dark-text);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#question-area {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+#input-ui {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#timer {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
