@@ -128,3 +128,69 @@ button:hover {
   margin-top: 1rem;
   font-size: 1.1rem;
 }
+
+/* Piano UI Styles */
+#input-ui.piano-layout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 120px;
+  margin: 1rem 0;
+  gap: 0;
+}
+
+.white-key {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 120px;
+  background: white;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.white-key:first-child {
+  border-left: none;
+}
+.white-key:last-child {
+  border-right: none;
+}
+
+.white-key:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.black-key {
+  width: 28px;
+  height: 80px;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 28px;
+  z-index: 2;
+  border-radius: 0 0 4px 4px;
+}
+
+.black-key:hover {
+  background: #444;
+  cursor: pointer;
+}
+
+.white-key.correct {
+  background-color: green !important;
+}
+.white-key.incorrect {
+  background-color: red !important;
+}
+.black-key.correct {
+  background-color: green !important;
+}
+.black-key.incorrect {
+  background-color: red !important;
+}

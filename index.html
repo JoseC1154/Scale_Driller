@@ -13,7 +13,7 @@
 
       <div class="input-type-icons">
         <img src="images/icon_keys.png" alt="Keys" class="icon active" id="icon-keys" />
-        <img src="images/icon_piano.png" alt="Piano" class="icon disabled" id="icon-piano" />
+        <img src="images/icon_piano.png" alt="Piano" class="icon active" id="icon-piano" />
         <img src="images/icon_bass.png" alt="Bass" class="icon disabled" id="icon-bass" />
         <img src="images/icon_guitar.png" alt="Guitar" class="icon disabled" id="icon-guitar" />
       </div>
@@ -73,6 +73,14 @@
       <div id="question-area"></div>
       <div id="input-ui"></div>
       <div id="timer">2:00</div>
+    </div>
+    <div id="results-card" class="card hidden">
+      <div class="results-summary">
+        <h2>Quiz Complete</h2>
+        <p>Correct: <span id="results-correct">0</span></p>
+        <p>Incorrect: <span id="results-incorrect">0</span></p>
+        <button id="try-again-btn">Try Again</button>
+      </div>
     </div>
   </div>
 
